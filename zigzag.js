@@ -129,7 +129,7 @@ async function sendMessage() {
 
 async function runBot() {
   try {
-    const ethData15m = await getETHData("5m");
+    const ethData15m = await getETHData("15m");
     const zigZag = computeZigZag(ethData15m);
     zigzagFinal = [];
     status = "UP";
