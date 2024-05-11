@@ -129,6 +129,7 @@ async function sendMessage() {
 
 async function runBot() {
   try {
+    console.log("BOT RUNNING...");
     const ethData15m = await getETHData("15m");
     const zigZag = computeZigZag(ethData15m);
     zigzagFinal = [];
